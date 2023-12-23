@@ -1,0 +1,58 @@
+.Top {
+    width: 100%;
+    display: flex;
+    gap: 12px
+}
+
+.Body {
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+}
+
+.CardDescription {
+    text-align: left;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(0,0,0);
+    margin-bottom: 10px;
+    @media only screen and (max-width: 768px){
+        font-size: 12px;
+    }
+}
+
+.CardSkills {
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    margin-top: -10px;
+}
+
+.SkillDesign {
+    font-weight: 600;
+}
+
+.ItemWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.Role {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(0,0,0);
+    @media only screen and (max-width: 768px){
+        font-size: 14px;
+    }
+}
+
+.SkillList {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(0,0,0);
+    @media only screen and (max-width: 768px){
+        font-size: 12px;
+    }
+}

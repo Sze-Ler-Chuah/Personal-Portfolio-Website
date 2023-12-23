@@ -1,0 +1,62 @@
+.PContainer {
+    background: rgb(249, 212, 112);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%,100% 98%, 0 100%);
+}
+
+.PWrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1350px;
+    padding: 10px 0px 100px 0;
+    gap: 12px;
+    @media (max-width: 960px) {
+        flex-direction: column;
+    }
+}
+
+.ToggleButtonGroup {
+    display: flex;
+    border:  2.5px solid rgb(48, 77, 48);
+    background: rgb(177, 195, 129);
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    border-radius: 12px;
+    font-weight: 500;
+    margin: 22px 0px;
+    @media (max-width: 768px) {
+        font-size: 12px;
+    }
+}
+
+.Divider {
+    width: 1.5px;
+    background: rgb(0,0,0);
+}
+
+.CardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    flex-wrap: wrap;
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 32px;
+    grid-auto-rows: minmax(100px, auto);
+    @media (max-width: 960px) {
+         grid-template-columns: repeat(2, 1fr);
+     }
+     @media (max-width: 640px) {
+         grid-template-columns: repeat(1, 1fr);
+     } */
+}
