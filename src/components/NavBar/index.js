@@ -13,7 +13,7 @@ const NavBar = () => {
     <div className='Nav'>
       <div className='NavContainer'>
         <LinkR className='NavLogo' to = '/'> 
-          <a style={{ display: "flex", alignItems: "center", color: "black", marginBottom: '20', cursor: 'pointer' }}> 
+          <a href = '#about' style={{ display: "flex", alignItems: "center", color: "black", marginBottom: '20', cursor: 'pointer' }}> 
             <FaComputer size="3rem" /> 
           </a>
         </LinkR>
