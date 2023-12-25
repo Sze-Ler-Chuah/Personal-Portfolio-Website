@@ -1,0 +1,68 @@
+.ETop{
+    width: 100%;
+    display: flex;
+    gap: 12px
+}
+
+.EImage {
+    height: 50px;
+    background-color: #000;
+    border-radius: 10px;
+    margin-top: 4px;
+    @media only screen and (max-width: 768px){
+        height: 40px;
+    }
+}
+
+.EBody {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.EName {
+    font-size: 18px;
+    font-weight: 600;
+    color:rgb(0,0,0);
+    @media only screen and (max-width: 768px){
+        font-size: 14px;
+    }
+}
+
+.EDegree {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(0,0,0);
+    @media only screen and (max-width: 768px){
+        font-size: 12px;
+    }
+}
+
+.EDate {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(0,0,0);
+    @media only screen and (max-width: 768px){
+        font-size: 10px;
+    }
+}
+
+.EGrade {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(255, 179, 0);
+    @media only screen and (max-width: 768px){
+        font-size: 12px;
+    }
+}
+
+.EDescription {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(0,0,0);
+    margin-bottom: 10px;
+    @media only screen and (max-width: 768px){
+        font-size: 12px;
+    }
+}

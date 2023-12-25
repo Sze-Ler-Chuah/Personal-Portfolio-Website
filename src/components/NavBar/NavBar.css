@@ -101,7 +101,7 @@
     }
 }
 
-.GitHubButton {
+.LinkedInButton {
     background-color: rgb(0, 0, 0,0.2);
     border : 2.5px solid rgb(45, 44, 53);
     justify-content: center;
@@ -121,7 +121,7 @@
     }
 }
 
-.GitHubButton:hover{
+.LinkedInButton:hover{
     background: rgb(255, 255, 255);
     color: rgb(238, 199, 89) ;  
 }

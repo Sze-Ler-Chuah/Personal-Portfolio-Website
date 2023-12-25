@@ -1,16 +1,17 @@
 export const Bio = {
     name: "Chuah Sze Ler",
     roles: [
-      "CS Student",
-      "Data Analyst",
-      "Software Engineer",
+      "CS STUDENT",
+      "FUTURE DATA ANALYST",
+      "FUTURE SOFTWARE ENGINEER",
     ],
     description:
       "Hello There, I am Chuah Sze Ler.",
     github: "https://github.com/SzeLer",
-    resume:
-      "https://drive.google.com/file/d/1uHhO0gcPWkkijdPQLV3H_CeD3LY9Xljr/view",
+    resume: "https://drive.google.com/file/d/1uHhO0gcPWkkijdPQLV3H_CeD3LY9Xljr/view",
     linkedin: "https://www.linkedin.com/in/chuah-sze-ler-0955b2264/",
+    instagram: "https://www.instagram.com/sze__ler/?hl=en",
+    facebook: "https://www.facebook.com/SZE.LER.0417",
   };
   
   export const skills = [
@@ -111,9 +112,21 @@ export const Bio = {
       description:
         "Developed My Very First Website",
       image:
-        "https://drive.google.com/file/d/1-k101UvclEVs7SqwjrtRhECpvDXA7G_l/view",
+        " https://github.com/SzeLer/portfolio/blob/master/src/Image/Pic1.png",
       tags: ["React Js", "CSS"],
       category: "web app",
+      github: "https://github.com/rishavchanda/Podstream",
+    },
+    {
+      id: 1,
+      title: "Personal Portfolio",
+      date: "Dec 2023 - Present",
+      description:
+        "Developed My Very First Website",
+      image:
+        " https://github.com/SzeLer/portfolio/blob/master/src/Image/Pic1.png",
+      tags: ["React Js", "CSS"],
+      category: "data",
       github: "https://github.com/rishavchanda/Podstream",
     },
   ];

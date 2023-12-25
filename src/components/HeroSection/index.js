@@ -24,6 +24,8 @@ const HeroSection = () => {
                 </p> 
               </div>
               <a className='ResumeButton' href = {Bio.resume} target='display'> RESUME </a>
+              <a className='GitHubButton' href = {Bio.github} target='display'> GITHUB PROFILE </a>
+
 
             </div>
             <div className='HeroRightContainer' id = 'Right'> 

@@ -23,13 +23,14 @@ const NavBar = () => {
           }} />
         </div>
         <ul className='NavItems'>
-          <a href = '#about' className='NavLink'> ABOUT ME </a>
-          <a href = '#skill' className='NavLink'> SKILLS </a>
-          <a href = '#project' className='NavLink'> PROJECTS </a>
+          <a href = '#about' className='NavLink'> ABOUT </a>
+          <a href = '#skill' className='NavLink'> SKILL </a>
+          <a href = '#experience' className='NavLink'> EXPERIENCE </a>
+          <a href = '#project' className='NavLink'> PROJECT </a>
           <a href = '#education' className='NavLink'> EDUCATION </a>
         </ul>
         <div className='ButtonContainer'>
-          <a className='GitHubButton' href={Bio.github} target="_blank" > GitHubProfile </a>
+          <a className='LinkedInButton' href={Bio.linkedin} target="_blank" > LinkedInProfile </a>
         </div>
         {
           isOpen &&
@@ -37,15 +38,15 @@ const NavBar = () => {
             <MobileLink href="#about" onClick={() => {
               setIsOpen(!isOpen)
             }}>About</MobileLink>
-            <MobileLink href='#skills' onClick={() => {
+            <MobileLink href='#skill' onClick={() => {
               setIsOpen(!isOpen)
             }}>Skills</MobileLink>
             <MobileLink href='#experience' onClick={() => {
               setIsOpen(!isOpen)
             }}>Experience</MobileLink>
-            <MobileLink href='#projects' onClick={() => {
+            <MobileLink href='#project' onClick={() => {
               setIsOpen(!isOpen)
-            }}>Projects</MobileLink>
+            }}>Project</MobileLink>
             <MobileLink href='#education' onClick={() => {
               setIsOpen(!isOpen)
             }}>Education</MobileLink>
@@ -58,39 +59,3 @@ const NavBar = () => {
 }
 
 export default NavBar
-
-
-
-// {
-//   isOpen && 
-//   <div className='MobileMenu' isopen = "true">
-//     <a 
-//       href = '#about' 
-//       className='MobileLink' 
-//       onClick={() => {setIsOpen(!isOpen)}}
-//     >
-//     ABOUT ME
-//     </a>
-//     <a 
-//       href = '#skill' 
-//       className='MobileLink' 
-//       onClick={() => {setIsOpen(!isOpen)}}
-//     >
-//     SKILLS
-//     </a>
-//     <a 
-//       href = '#project' 
-//       className='MobileLink' 
-//       onClick={() => {setIsOpen(!isOpen)}}
-//     >
-//     PROJECTS
-//     </a>
-//     <a 
-//       href = '#education' 
-//       className='MobileLink' 
-//       onClick={() => {setIsOpen(!isOpen)}}
-//     >
-//     EDUCATION
-//     </a>
-//   </div>
-// }

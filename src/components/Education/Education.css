@@ -1,9 +1,8 @@
-.Ex{
-    background-color: rgb(249, 212, 112);
+.EF {
+    background-color:  rgb(180, 192, 142);
 }
 
-.ExContainer {
-    height : 600px;
+.EContainer {
     background-color: rgb(255, 247, 212);
     display: flex;
     flex-direction: column;
@@ -11,7 +10,7 @@
     position: relative;
     z-index: 1;
     align-items: center;
-    padding: 0px 0px 80px 0px;
+    padding: 0px 0px 60px 0px;
     @media (max-width: 960px) {
         padding: 0px;
     }
@@ -19,7 +18,7 @@
 
 }
 
-.ExWrapper {
+.EWrapper {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -27,14 +26,35 @@
     flex-direction: column;
     width: 100%;
     max-width: 1350px;
-    padding: 80px 0;
+    padding: 40px 0px 0px 0px;
     gap: 12px;
     @media (max-width: 960px) {
         flex-direction: column;
     }
 }
 
-.TimeLineSection {
+.ETitle {
+    font-family: cursive;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 600;
+    color: rgb(27, 66, 66);
+    @media (max-width: 768px) {
+        font-size: 32px;
+    }
+}
+
+.EdDescription {
+    font-size: 18px;
+    text-align: left;
+    max-width: 600px;
+    color: rgb(0, 0, 0);
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
+}
+
+.ETimeLineSection {
     width: 100%;
     max-width: 1000px;
     margin-top: 10px;
@@ -43,4 +63,8 @@
     align-items: center;
     justify-content: center;
     gap: 12px;
+    @media (max-width: 660px) {
+        align-items: end;
+    }
 }
+

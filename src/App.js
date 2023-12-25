@@ -1,15 +1,15 @@
 import './App.css';
 import { useState } from 'react';
-import styled, { ThemeProvider } from 'styled-components';
-import { darkTheme } from './utils/Theme';
+import styled from 'styled-components';
+import { BrowserRouter as Router } from 'react-router-dom';
+
 import NavBar from './components/NavBar';
 import HeroSection from './components/HeroSection';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Education from './components/Education';
-import { BrowserRouter as Router } from 'react-router-dom';
 import Project from './components/Project';
-
+import Footer from './components/Footer';
 
 const Body = styled.div`;
   width : 100%;
@@ -21,12 +21,10 @@ const Wrapper = styled.div`
   width: 100%;
   
 `
-
-
 function App() {
   const [openModal, setOpenModal] = useState({ state: false, project: null });
+  console.log(openModal)
   return (
-    <ThemeProvider theme = {darkTheme}>
       <Router>
         <NavBar />
         <Body>
@@ -36,9 +34,12 @@ function App() {
             <Experience />
           </Wrapper>
           <Project openModal={openModal} setOpenModal={setOpenModal} />
+          <Wrapper>
+            <Education />
+          </Wrapper>
+          <Footer />
         </Body>
       </Router>
-    </ThemeProvider>
   );
 }
 
