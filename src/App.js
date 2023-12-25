@@ -10,6 +10,7 @@ import Experience from './components/Experience';
 import Education from './components/Education';
 import Project from './components/Project';
 import Footer from './components/Footer';
+import ProjectDetails from './components/ProjectDetails';
 
 const Body = styled.div`;
   width : 100%;
@@ -38,6 +39,9 @@ function App() {
             <Education />
           </Wrapper>
           <Footer />
+          {openModal.state &&
+            <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
+          }
         </Body>
       </Router>
   );

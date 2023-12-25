@@ -127,7 +127,8 @@ export const Bio = {
         " https://github.com/SzeLer/portfolio/blob/master/src/Image/Pic1.png",
       tags: ["React Js", "CSS"],
       category: "web app",
-      github: "https://github.com/rishavchanda/Podstream",
+      github: "https://github.com/SzeLer/portfolio",
+      webapp: "https://sze-ler-portfolio-9y9br5864-sze-lers-projects.vercel.app/"
     },
     {
       id: 1,
@@ -139,7 +140,8 @@ export const Bio = {
         " https://github.com/SzeLer/portfolio/blob/master/src/Image/Pic1.png",
       tags: ["React Js", "CSS"],
       category: "data",
-      github: "https://github.com/rishavchanda/Podstream",
+      github: "https://github.com/SzeLer/portfolio",
+      webapp : "https://sze-ler-portfolio-9y9br5864-sze-lers-projects.vercel.app/"
     },
   ];
   
