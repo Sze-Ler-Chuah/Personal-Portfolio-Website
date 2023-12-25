@@ -29,7 +29,7 @@ const HeroSection = () => {
 
             </div>
             <div className='HeroRightContainer' id = 'Right'> 
-              <img className = 'Image' src = {photo} alt = 'myself' />
+              <img className = 'Image' src = {photo} alt = 'SzePhoto' />
             </div>
           </div>
       </div>
