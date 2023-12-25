@@ -4,7 +4,7 @@ import './NavBar.css'
 import { Link as LinkR } from 'react-router-dom';
 import { FaComputer } from "react-icons/fa6";
 import {FaBars} from 'react-icons/fa';
-import { MobileMenu, MobileLink, MobileNavLogo } from './design';
+import { MobileMenu, MobileLink } from './design';
 import {Bio} from '../../data/constants';
 
 const NavBar = () => {
@@ -30,7 +30,7 @@ const NavBar = () => {
           <a href = '#education' className='NavLink'> EDUCATION </a>
         </ul>
         <div className='ButtonContainer'>
-          <a className='LinkedInButton' href={Bio.linkedin} target="_blank" > LinkedInProfile </a>
+          <a className='LinkedInButton' href={Bio.linkedin} target="_blank" rel="noreferrer"  > LinkedInProfile </a>
         </div>
         {
           isOpen &&
@@ -50,7 +50,7 @@ const NavBar = () => {
             <MobileLink href='#education' onClick={() => {
               setIsOpen(!isOpen)
             }}>Education</MobileLink>
-            <a href={Bio.github} target="_blank"> GitHubProfile </a>
+            <a href={Bio.github} target="_blank" rel="noreferrer" > GitHubProfile </a>
           </MobileMenu>
         }
       </div>

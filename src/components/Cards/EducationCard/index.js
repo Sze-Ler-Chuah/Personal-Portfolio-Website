@@ -62,7 +62,7 @@ const EducationCard = ({education}) => {
   return (
     <Card>
         <div className='ETop'>
-            <img className='EImage' src = {education.img}/>
+            <img className='EImage' src = {education.img} alt = 'schoolimage'/>
             <div className='EBody'>
                 <div className='EName'>{education.school}</div>
                 <div className='EDegree'>{education.degree}</div>

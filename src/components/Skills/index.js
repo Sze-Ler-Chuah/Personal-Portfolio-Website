@@ -12,7 +12,7 @@ const Skills = () => {
           <div className='SkillContainer'>
             {skills.map((skill) => (
               <div className='Skill'>
-                <h2> {skill.title} </h2>
+                <h2 key = {skill.id}> {skill.title} </h2>
                 <div className='SkillList'> {skill.skills.map((item) => (
                   <div className='SkillItem'>
                     {/* <img className='Image' src = {item.image} /> */}

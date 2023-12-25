@@ -15,43 +15,52 @@ export const Bio = {
   };
   
   export const skills = [
-    {
+    { 
+      id : 1,
       title: "Frontend",
       skills: [
         {
+          id : 1,
           name: "React Js",
           image: "https://www.clipartmax.com/png/small/356-3567384_rob-has-been-working-to-make-the-collaborizms-user-react-js-svg.png"
         },
         {
+          id : 2,
           name: "HTML",
           image: "https://www.clipartmax.com/png/small/5-55642_programming-services-html-5.png",
         },
         {
+          id : 3,
           name: "CSS",
           image:
           "https://www.clipartmax.com/png/small/206-2065222_psd-tp-css3-%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF-css.png",
         },
         {
+          id : 4,
           name: "JavaScript",
           image:
           "https://www.clipartmax.com/png/small/150-1504620_javascript-logo.png",
         },
       ],
     },
-    {
+    { 
+      id : 2,
       title: "Data Analyst",
       skills: [
-        {
+        { 
+          id : 1,
           name: "R Language",
           image:
             "https://www.clipartmax.com/png/small/13-137348_logo-r-programming.png"
         },
-        {
+        { 
+          id : 2,
           name: "Python",
           image:
           "https://www.clipartmax.com/png/small/63-633028_python-clipart-mean-python-programming-information.png",
         },
         {
+          id : 3,
           name: "Jupyter",
           image:
           "https://www.clipartmax.com/png/small/250-2501985_siks-cbs-datacamp-spark-tutorial-notebook-jupyter-notebook-icon.png",
@@ -62,12 +71,15 @@ export const Bio = {
       title: "Soft Skills",
       skills: [
         {
+          id : 1,
           name: "Communication",
         },
         {
+          id : 2,
           name: "TeamWork",
         },
         {
+          id : 3,
           name: "LeaderShip",
         },
       ],
