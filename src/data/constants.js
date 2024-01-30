@@ -1,3 +1,5 @@
+import photo1 from '../Image/photo.jpg';
+
 export const Bio = {
     name: "Chuah Sze Ler",
     roles: [
@@ -120,11 +122,11 @@ export const Bio = {
     {
       id: 0,
       title: "Personal Portfolio",
-      date: "Dec 2023 - Present",
+      date: "Dec 2023 - Jan 2024",
       description:
         "Developed My Very First Website",
       image:
-        " https://drive.google.com/file/d/1-k101UvclEVs7SqwjrtRhECpvDXA7G_l/view",
+        " https://github.com/SzeLer/portfolio/raw/master/src/Image/Pic1.png",
       tags: ["React Js", "CSS"],
       category: "web app",
       github: "https://github.com/SzeLer/portfolio",
@@ -132,13 +134,12 @@ export const Bio = {
     },
     {
       id: 1,
-      title: "Personal Portfolio",
-      date: "Dec 2023 - Present",
+      title: "Weather WebApp",
+      date: "Jan 2024",
       description:
-        "Developed My Very First Website",
-      image:
-      " https://drive.google.com/file/d/1-k101UvclEVs7SqwjrtRhECpvDXA7G_l/view",
-      tags: ["React Js", "CSS"],
+        "Weather WebApp which helps in forecasting weather for countries around the world",
+      image: {photo1},
+      tags: ["HTML", "CSS", "JavaScript"],
       category: "data",
       github: "https://github.com/SzeLer/portfolio",
       webapp : "https://sze-ler-portfolio-9y9br5864-sze-lers-projects.vercel.app/"

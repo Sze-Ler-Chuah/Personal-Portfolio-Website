@@ -2,7 +2,7 @@ import React from 'react';
 import './HeroSection.css';
 import { Bio } from '../../data/constants';
 import Typewriter from 'typewriter-effect';
-import photo from '../../Image/photo.jpg'
+import photo from '../../Image/photo.jpg';
 
 const HeroSection = () => {
   return (
