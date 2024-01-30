@@ -126,9 +126,9 @@ export const Bio = {
       description:
         "Developed My Very First Website",
       image:
-        " https://github.com/SzeLer/portfolio/raw/master/src/Image/Pic1.png",
+        " https://github.com/SzeLer/portfolio/raw/master/src/Image/Picture1.png",
       tags: ["React Js", "CSS"],
-      category: "web app",
+      category: "data",
       github: "https://github.com/SzeLer/portfolio",
       webapp: "https://sze-ler-portfolio-9y9br5864-sze-lers-projects.vercel.app/"
     },
@@ -138,11 +138,11 @@ export const Bio = {
       date: "Jan 2024",
       description:
         "Weather WebApp which helps in forecasting weather for countries around the world",
-      image: {photo1},
+      image: "https://github.com/SzeLer/portfolio/raw/master/src/Image/Picture2.png",
       tags: ["HTML", "CSS", "JavaScript"],
-      category: "data",
-      github: "https://github.com/SzeLer/portfolio",
-      webapp : "https://sze-ler-portfolio-9y9br5864-sze-lers-projects.vercel.app/"
+      category: "web app",
+      github: "https://github.com/SzeLer/What-s-The-Weather",
+      webapp : "https://szeler.github.io/SzeLer.github.io-What-s-The-Weather/"
     },
   ];
   
