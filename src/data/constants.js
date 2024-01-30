@@ -127,7 +127,7 @@ export const Bio = {
         "Developed My Very First Website",
       image:
         " https://github.com/SzeLer/portfolio/raw/master/src/Image/Picture1.png",
-      tags: ["React Js", "CSS"],
+      tags: ["HTML", "CSS", "JavaScript", "React"],
       category: "data",
       github: "https://github.com/SzeLer/portfolio",
       webapp: "https://sze-ler-portfolio-9y9br5864-sze-lers-projects.vercel.app/"
