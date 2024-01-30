@@ -45,8 +45,8 @@ const ProjectDetails = ({openModal,setOpenModal}) => {
                             cursor: "pointer",
                         }}
                         onClick={() => setOpenModal({ state: false, project: null })}/>
-                    <img src = {project?.image} alt = 'project'/>
-                    <div className='PDTitle'>{project?.title}</div>
+                    <img src = {project?.image} alt = 'project_image'/>
+                    <div className='PDTitle'>{project.title}</div>
                     <div className='PDDate'>{project.date}</div>
                     <div className='PDTags'>
                         {project.tags.map((tag) => (
