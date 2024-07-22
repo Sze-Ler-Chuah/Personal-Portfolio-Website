@@ -70,6 +70,7 @@ const EducationCard = ({education}) => {
             </div>
         </div>
         <div className='EGrade'> <b>Grade : {education.grade} </b></div>
+        <div className='EWam'><b> WAM : {education.wam} </b></div>
         <div className='EDescription'>
             <Span>{education.desc}</Span>
         </div>

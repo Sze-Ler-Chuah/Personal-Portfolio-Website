@@ -22,25 +22,19 @@ export const Bio = {
       skills: [
         {
           id : 1,
-          name: "React Js",
-          image: "https://www.clipartmax.com/png/small/356-3567384_rob-has-been-working-to-make-the-collaborizms-user-react-js-svg.png"
+          name: "React Js"
         },
         {
           id : 2,
-          name: "HTML",
-          image: "https://www.clipartmax.com/png/small/5-55642_programming-services-html-5.png",
+          name: "HTML"
         },
         {
           id : 3,
-          name: "CSS",
-          image:
-          "https://www.clipartmax.com/png/small/206-2065222_psd-tp-css3-%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF-css.png",
+          name: "CSS"
         },
         {
           id : 4,
-          name: "JavaScript",
-          image:
-          "https://www.clipartmax.com/png/small/150-1504620_javascript-logo.png",
+          name: "JavaScript"
         },
       ],
     },
@@ -50,28 +44,19 @@ export const Bio = {
       skills: [
         { 
           id : 1,
-          name: "R Language",
-          image:
-            "https://www.clipartmax.com/png/small/13-137348_logo-r-programming.png"
+          name: "R Language"
+
         },
         { 
           id : 2,
-          name: "Python",
-          image:
-          "https://www.clipartmax.com/png/small/63-633028_python-clipart-mean-python-programming-information.png",
+          name: "Python"
         },
         {
           id : 3,
-          name: "Jupyter",
-          image:
-          "https://www.clipartmax.com/png/small/250-2501985_siks-cbs-datacamp-spark-tutorial-notebook-jupyter-notebook-icon.png",
-        },
-        {
-          id : 4,
           name : "Tableau"
         },
         {
-          id : 5,
+          id : 4,
           name : "Power Bi"
         }
       ],
@@ -122,16 +107,18 @@ export const Bio = {
       img: 'https://logowik.com/content/uploads/images/438_monash_university_logo.jpg',
       school: "Monash University Malaysia",
       date: "July 2022 - Present",
-      grade: "3.973 CGPA",
+      grade: "3.94 CGPA",
+      wam : "88.458",
       desc: "I am currently pursuing a Bachelor's degree in Computer Science. Languages that I have learned includes Python, Java, R, Jupyter, SQL, JavaScript",
-      degree: "Bachelor Degree in Advanced Computer Science",
+      degree: "Bachelor Degree of Computer Science",
     },
     {
       id: 1,
       img: "https://seeklogo.com/images/T/tsun-jin-logo-A200A4CCC7-seeklogo.com.png",
       school: "Tsun Jin High School",
       date: "Jan 2016 - Dec 2021",
-      grade : "-",
+      grade : "12th across the whole cohort",
+      wam : "-",
       desc: "I completed my secondary education at Tsun Jin High School where I studied Pure Science",
     },
   ];
@@ -141,9 +128,17 @@ export const Bio = {
       id: 0,
       role: "Competitive Programmer",
       date:  "Apr 2023 - Present",
-      desc: "Having participated in various competitive programming competition, programming skills have been honed  ",
+      desc: "Having participated in various competitive programming competition, programming skills have been honed ",
       skills: ["Python"],
     },
+    {
+      id: 0,
+      role: "TeaMWork Virtual Internship Program",
+      date:  "Jun 2024 - July 2024",
+      desc: "A collaborative virtual internship program with students from University of Warwick, Monash University in association with IBM to create a marketing strategy to promote Artificial Intelligence to business student using IBM Skills Build Platform.",
+      skills: ["Teamwork","Communication","Presentation","AI"],
+    },
+
   ];
 
 
@@ -179,4 +174,5 @@ export const Bio = {
     { year: 2022, text: "Found Interest in the field of Computer Science" },
     { year: 2022, text: "Started to Participate Coding Competition" },
     { year: 2023, text: "Did Some Small Projects" },
+    { year: 2024, text: "First Intern (TeaMWork Virtual Internship Program)"}
   ];

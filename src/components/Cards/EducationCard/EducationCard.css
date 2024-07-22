@@ -50,7 +50,16 @@
 .EGrade {
     font-size: 14px;
     font-weight: 500;
-    color: rgb(247, 168, 0);
+    color: rgb(0, 0, 0);
+    @media only screen and (max-width: 768px){
+        font-size: 12px;
+    }
+}
+
+.EWam {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
     @media only screen and (max-width: 768px){
         font-size: 12px;
     }

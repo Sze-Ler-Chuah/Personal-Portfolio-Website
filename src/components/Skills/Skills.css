@@ -77,10 +77,9 @@
 
 }
 
-.Skill {
+/* .Skill {
     text-align: center;
-    width: 100%;
-    max-width: 500px;
+    width: 220px;
     background: rgb(177, 195, 129);
     border: 2px solid rgb(48, 77, 48);
     border-radius: 16px;
@@ -98,7 +97,38 @@
         max-width: 150px;
         padding: 5px 10px;
     }
-}   
+}    */
+
+.Skill {
+    text-align: center;
+    width: 220px;
+    background: rgb(177, 195, 129);
+    border: 2px solid rgb(48, 77, 48);
+    border-radius: 16px;
+    padding: 18px 36px;
+}
+
+@media (max-width: 960px) {
+    .Skill {
+        width: 200px;
+        padding: 10px 36px;
+    }
+}
+
+@media (max-width: 900px) {
+    .Skill {
+        width: 200px;
+        padding: 5px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Skill {
+        width: 150px;
+        padding: 5px 10px;
+    }
+}
+
 
 .SkillList {
     display: inline;
