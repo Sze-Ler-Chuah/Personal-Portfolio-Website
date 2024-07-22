@@ -1,11 +1,10 @@
-import photo1 from '../Image/photo.jpg';
-
 export const Bio = {
     name: "Chuah Sze Ler",
     roles: [
       "CS STUDENT",
       "FUTURE DATA ANALYST",
       "FUTURE SOFTWARE ENGINEER",
+      "FUTURE FRONTEND DEVELOPER"
     ],
     description:
       "Hello There, I am Chuah Sze Ler.",
@@ -67,9 +66,18 @@ export const Bio = {
           image:
           "https://www.clipartmax.com/png/small/250-2501985_siks-cbs-datacamp-spark-tutorial-notebook-jupyter-notebook-icon.png",
         },
+        {
+          id : 4,
+          name : "Tableau"
+        },
+        {
+          id : 5,
+          name : "Power Bi"
+        }
       ],
     },
     {
+      id : 3,
       title: "Soft Skills",
       skills: [
         {
@@ -78,14 +86,34 @@ export const Bio = {
         },
         {
           id : 2,
-          name: "TeamWork",
+          name: "Teamwork",
         },
         {
           id : 3,
-          name: "LeaderShip",
+          name: "Leadership",
         },
       ],
     },
+    {
+      id : 4,
+      title : "DataBase",
+      skills : [
+        {
+          id : 1,
+          name : "SQL",
+        }
+      ]
+    },
+    {
+      id : 5,
+      title : "OOP",
+      skills : [
+        {
+          id : 1,
+          name : "Java",
+        }
+      ]
+    }
   ];
   
   export const education = [
@@ -95,7 +123,7 @@ export const Bio = {
       school: "Monash University Malaysia",
       date: "July 2022 - Present",
       grade: "3.973 CGPA",
-      desc: "I am currently pursuing a Bachelor's degree in Computer Science.",
+      desc: "I am currently pursuing a Bachelor's degree in Computer Science. Languages that I have learned includes Python, Java, R, Jupyter, SQL, JavaScript",
       degree: "Bachelor Degree in Advanced Computer Science",
     },
     {
@@ -103,6 +131,7 @@ export const Bio = {
       img: "https://seeklogo.com/images/T/tsun-jin-logo-A200A4CCC7-seeklogo.com.png",
       school: "Tsun Jin High School",
       date: "Jan 2016 - Dec 2021",
+      grade : "-",
       desc: "I completed my secondary education at Tsun Jin High School where I studied Pure Science",
     },
   ];
@@ -124,11 +153,11 @@ export const Bio = {
       title: "Personal Portfolio",
       date: "Dec 2023 - Jan 2024",
       description:
-        "Developed My Very First Website",
+        "Developed my very first website. This is a portfolio website. ",
       image:
         " https://github.com/SzeLer/portfolio/raw/master/src/Image/Picture1.png",
       tags: ["HTML", "CSS", "JavaScript", "React"],
-      category: "data",
+      category: "web app",
       github: "https://github.com/SzeLer/portfolio",
       webapp: "https://sze-ler-portfolio-9y9br5864-sze-lers-projects.vercel.app/"
     },

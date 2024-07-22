@@ -19,8 +19,8 @@ const HeroSection = () => {
               <div className='SubTitle'> 
                 <p> Hello There, I am Chuah Sze Ler. <br/> 
                     Currently studying at Monash University Malaysia. <br/>
-                    I have a wide interest in Data Analtytics field and <br/> actively seeking 
-                    a job related with this field.
+                    I have a wide interest in Data Analytics, <br/> Software Engineer, FrontEnd Developer and <br/> actively seeking 
+                    job related with these fields.
                 </p> 
               </div>
               <a className='ResumeButton' href = {Bio.resume} target='display'> RESUME </a>

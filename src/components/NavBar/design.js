@@ -12,7 +12,7 @@ export const MobileMenu = styled.div`
     right: 0;
     width: 100%;
     padding: 12px 40px 24px 40px;
-    background: rgb(0,0,0);
+    background: rgb(27, 66, 66);
     transition: all 0.6s ease-in-out;
     transform: ${({ isOpen }) => (isOpen ? 'translateY(0)' : 'translateY(-100%)')};
     border-radius: 0 0 20px 20px;
@@ -21,16 +21,16 @@ export const MobileMenu = styled.div`
     z-index: ${({ isOpen }) => (isOpen ? '1000' : '-1000')};
 
 `
-export  const MobileLink = styled.a`
-  color: ${({ theme }) => theme.text_primary};
+export const MobileLink = styled.a`
+  color : rgb(255,255,255);
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
   :hover {
-    color: ${({ theme }) => theme.primary};
-  }
+    color : rgb(0,0,0);
 
+  }
   &.active {
     border-bottom: 2px solid ${({ theme }) => theme.primary};
   }

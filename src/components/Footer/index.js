@@ -22,7 +22,7 @@ const Footer = () => {
             <a href = {Bio.facebook} className='FSocialMediaIcon' target='display'> <FacebookIcon /> </a>
             <a href = {Bio.instagram} className='FSocialMediaIcon' target='display'> <InstagramIcon /> </a>
             </div>
-            <p className='FCopyRight'> &copy; 2023 Chuah Sze Ler. All Rights Reserved. </p>
+            <p className='FCopyRight'> &copy; 2024 Chuah Sze Ler. All Rights Reserved. </p>
         </div>
     </div>
   )

@@ -4,7 +4,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #ffead8a7;
+    background-color: #ece0d6a7;
     display: flex;
     align-items: top;
     justify-content: center;
@@ -74,7 +74,8 @@
     margin: 4px;
     padding: 4px 8px;
     border-radius: 8px;
-    background-color: rgb(53, 89, 224);
+    background-color: rgb(0, 77, 132);
+    border: 1px solid rgb(0,0,0);
     @media only screen and (max-width: 600px) {
         font-size: 12px;
     }

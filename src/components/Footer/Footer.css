@@ -15,6 +15,9 @@
     align-items: center;
     padding: 1rem;
     color: rgb(0,0,0);
+    @media (max-width: 960px) {
+        flex-direction: column;
+    }
 }
 
 .FLogo {
@@ -61,7 +64,7 @@
 .FSocialMediaIcon {
     display: inline-block;
     margin: 0 1rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: rgb(0,0,0);
     transition: color 0.2s ease-in-out;
 }

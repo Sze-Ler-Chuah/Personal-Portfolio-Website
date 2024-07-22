@@ -49,7 +49,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 1100px;
+    max-width: 1250px;
 
     @media (max-width: 960px) {
         flex-direction: column;
@@ -87,8 +87,8 @@
       text-align: center;
     }
     @media (max-width: 640px) {
-      font-size: 22px;
-      line-height: 48px;
+      font-size: 15px;
+      line-height: 80px;
       margin-bottom: 16px;
     }
 }
@@ -121,7 +121,7 @@
     color:rgb(255,255,255);
     font-size: 20px;
     font-weight: 600;
-    background-color: rgb(0, 0, 0,0.3);
+    background-color: rgb(0, 77, 132);
     width: 80%;
     max-width: 200px;
     padding: 14px 0; /*adjust height*/
@@ -133,16 +133,17 @@
     -moz-appearance: button;
     appearance: button;
     
-    @media (max-width: 768px) {
+    @media (max-width: 960px) {
+        margin-left: 0px;
+        margin-top: 20px ;
         padding: 12px 0;
         font-size: 18px;
     } 
 }
 
-
 .ResumeButton:hover{
-    background: rgb(255, 255, 255);
-    color: rgb(238, 199, 89) ;  
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255) ;  
 }
 
 .GitHubButton {
@@ -151,7 +152,7 @@
     color:rgb(255,255,255);
     font-size: 20px;
     font-weight: 600;
-    background-color: rgb(0, 0, 0,0.3);
+    background-color: rgb(0, 77, 132);
     width: 80%;
     max-width: 200px;
     padding: 14px 0px; /*adjust height*/
@@ -163,23 +164,21 @@
     -moz-appearance: button;
     appearance: button;
     
-    @media (max-width: 768px) {
+    @media (max-width: 960px) {
         margin-left: 0px;
         margin-top: 20px ;
         padding: 12px 0;
         font-size: 18px;
     } 
 }
-
-
 .GitHubButton:hover{
-    background: rgb(255, 255, 255);
-    color: rgb(238, 199, 89) ;  
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 
 .HeroRightContainer {
-    width: 100%;
+    width: 80%;
     display: flex;
     order: 2;
     justify-content: end;

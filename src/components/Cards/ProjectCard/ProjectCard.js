@@ -23,7 +23,7 @@ const Card = styled.div`
     background-color: rgb(255, 247, 212);
     cursor: pointer;
     border-radius: 10px;
-    border : 3px solid rgb(238, 114, 20);
+    border : 2px solid rgb(0,0,0);
     box-shadow: 0 0 12px 4px rgba(238, 114, 20,0.4);
     overflow: hidden;
     padding: 26px 20px;
@@ -34,7 +34,6 @@ const Card = styled.div`
     &:hover {
         transform: translateY(-10px);
         box-shadow: 0 0 50px 4px rgba(238, 114, 20,0.6);
-        filter: brightness(1.1);
     }
     &:hover ${Button} {
         display: block;

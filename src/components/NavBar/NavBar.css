@@ -9,7 +9,7 @@
     top: 0;
     z-index: 10;
     @media (max-width: 960px) {
-        trastion: 0.8s all ease;
+        transtion: 0.8s all ease;
     }
 }
 
@@ -102,14 +102,14 @@
 }
 
 .LinkedInButton {
-    background-color: rgb(0, 0, 0,0.2);
+    background-color: rgb(0, 77, 132);
     border : 2.5px solid rgb(45, 44, 53);
     justify-content: center;
     display: flex;
     align-items: center;
     height: 70%;
     border-radius: 20px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     cursor: pointer;
     padding: 0 20px;
     font-weight: 500;
@@ -122,8 +122,10 @@
 }
 
 .LinkedInButton:hover{
-    background: rgb(255, 255, 255);
-    color: rgb(238, 199, 89) ;  
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255) ;
+    border : 2.5px solid rgb(255, 255, 255);
+
 }
 
 /* .MobileMenu {
@@ -165,4 +167,16 @@
 
 .MobileLink.active {
     border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.Git {
+    color : rgb(255,255,255);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.Git:hover {
+    color : rgb(0,0,0);
 }

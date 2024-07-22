@@ -50,7 +50,7 @@ const NavBar = () => {
             <MobileLink href='#education' onClick={() => {
               setIsOpen(!isOpen)
             }}>Education</MobileLink>
-            <a href={Bio.github} target="_blank" rel="noreferrer" > GitHubProfile </a>
+            <a className='Git' href={Bio.github} target="_blank" rel="noreferrer" > GitHubProfile </a>
           </MobileMenu>
         }
       </div>

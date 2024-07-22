@@ -15,7 +15,6 @@ const Skills = () => {
                 <h2 key = {skill.id}> {skill.title} </h2>
                 <div className='SkillList'> {skill.skills.map((item) => (
                   <div className='SkillItem'>
-                    {/* <img className='Image' src = {item.image} /> */}
                     {item.name}
                   </div>
                 ))}
