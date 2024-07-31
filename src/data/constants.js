@@ -9,7 +9,7 @@ export const Bio = {
     description:
       "Hello There, I am Chuah Sze Ler.",
     github: "https://github.com/SzeLer",
-    resume: "https://drive.google.com/file/d/1uHhO0gcPWkkijdPQLV3H_CeD3LY9Xljr/view",
+    resume: "https://drive.google.com/drive/u/0/recent",
     linkedin: "https://www.linkedin.com/in/chuah-sze-ler-0955b2264/",
     instagram: "https://www.instagram.com/sze__ler/?hl=en",
     facebook: "https://www.facebook.com/SZE.LER.0417",
