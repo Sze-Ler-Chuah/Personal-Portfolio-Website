@@ -18,13 +18,16 @@ const HeroSection = () => {
               </p>
               <div className='SubTitle'> 
                 <p> Hello There, I am Chuah Sze Ler. <br/> 
-                    Currently studying at Monash University Malaysia. <br/>
-                    I have a wide interest in Data Analytics, <br/> Software Engineer, FrontEnd Developer and <br/> actively seeking 
-                    job related with these fields.
+                    I am a Computer Science graduand from Monash University. <br/>
+                    I have a strong interest in Software Development and <br/> 
+                    I am actively seeking job opportunities in this field.
                 </p> 
               </div>
-              <a className='ResumeButton' href = {Bio.resume} target='display'> RESUME </a>
-              <a className='GitHubButton' href = {Bio.github} target='display'> GITHUB PROFILE </a>
+              <div className="ButtonRow">
+                <a className='ResumeButton' href={Bio.resume} target='display'> RESUME </a>
+                <a className='GitHubButton' href={Bio.github} target='display'> GITHUB </a>
+                <a className='LinkedInButton' href={Bio.linkedin} target='display'> LINKEDIN </a>
+              </div>
 
 
             </div>

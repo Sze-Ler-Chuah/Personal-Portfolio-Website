@@ -1,4 +1,3 @@
-import React from 'react';
 import { useState } from 'react';
 import './NavBar.css'
 import { Link as LinkR } from 'react-router-dom';
@@ -29,9 +28,6 @@ const NavBar = () => {
           <a href = '#project' className='NavLink'> PROJECT </a>
           <a href = '#education' className='NavLink'> EDUCATION </a>
         </ul>
-        <div className='ButtonContainer'>
-          <a className='LinkedInButton' href={Bio.linkedin} target="_blank" rel="noreferrer"  > LinkedInProfile </a>
-        </div>
         {
           isOpen &&
           <MobileMenu isOpen={isOpen}>

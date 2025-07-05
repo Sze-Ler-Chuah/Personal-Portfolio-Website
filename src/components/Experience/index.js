@@ -1,38 +1,35 @@
-import React from 'react'
-import Timeline from '@mui/lab/Timeline';
-import TimelineItem from '@mui/lab/TimelineItem';
-import TimelineSeparator from '@mui/lab/TimelineSeparator';
-import TimelineConnector from '@mui/lab/TimelineConnector';
-import TimelineContent from '@mui/lab/TimelineContent';
-import TimelineDot from '@mui/lab/TimelineDot';
-import { experiences } from '../../data/constants';
-import ExperienceCard from '../Cards/ExperienceCard/ExperienceCard';
-import './Experience.css'
+import { experiences } from "../../data/constants"
+import ExperienceCard from "../Cards/ExperienceCard/ExperienceCard"
+import "./Experience.css"
 
 const Experience = () => {
   return (
-    <div className='Ex'>
-        <div className='ExContainer' id = 'experience'>
-            <div className='ExWrapper'>
-                <div className='Title'> EXPERIENCE </div>
-                <div className='Description'> Experience As A Computer Science Student</div>
-                <div className='TimeLineSection'>
-                    <Timeline>
-                        {experiences.map((experience,index) => (
-                            <TimelineItem>
-                                <TimelineSeparator>
-                                    <TimelineDot variant="filled" color="grey" />
-                                    {index !== experience.length - 1 && <TimelineConnector style={{ background: '#607274' }} />}
-                                </TimelineSeparator>
-                                <TimelineContent sx={{ py: '12px', px: 2 }}>
-                                        <ExperienceCard experience={experience}/>
-                                </TimelineContent>
-                            </TimelineItem>
-                        ) )}
-                    </Timeline>
+    <div className="ExperienceSection" id="experience">
+      <div className="ExperienceContainer">
+        <div className="ExperienceWrapper">
+          <div className="ExperienceHeader">
+            <h2 className="ExperienceTitle">Experience</h2>
+            <p className="ExperienceDescription">
+              My journey as a Computer Science student and professional development
+            </p>
+          </div>
+          <div className="TimelineSection">
+            <div className="Timeline">
+              {experiences.map((experience, index) => (
+                <div key={index} className="TimelineItem" style={{ animationDelay: `${index * 0.2}s` }}>
+                  <div className="TimelineMarker">
+                    <div className="TimelineDot"></div>
+                    {index !== experiences.length - 1 && <div className="TimelineConnector"></div>}
+                  </div>
+                  <div className="TimelineContent">
+                    <ExperienceCard experience={experience} />
+                  </div>
                 </div>
+              ))}
             </div>
+          </div>
         </div>
+      </div>
     </div>
   )
 }

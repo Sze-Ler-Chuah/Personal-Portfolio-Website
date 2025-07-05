@@ -1,35 +1,30 @@
-import React from 'react'
-import Timeline from '@mui/lab/Timeline';
-import TimelineItem from '@mui/lab/TimelineItem';
-import TimelineSeparator from '@mui/lab/TimelineSeparator';
-import TimelineConnector from '@mui/lab/TimelineConnector';
-import TimelineContent from '@mui/lab/TimelineContent';
-import TimelineDot from '@mui/lab/TimelineDot';
-import {education, experiences} from '../../data/constants'
-import EducationCard from '../Cards/EducationCard';
-import './Education.css'
+import { education } from "../../data/constants"
+import EducationCard from "../Cards/EducationCard"
+import "./Education.css"
 
 const Education = () => {
   return (
-    <div className='EF'>
-      <div className='EContainer' id = 'education'>
-        <div className='EWrapper'>
-          <div className='ETitle'> EDUCATION </div>
-          <div className='EdDescription'> Below As My Path of Education</div>
-          <div className='ETimeLineSection'>
-            <Timeline>
-              {education.map((education,index) => (
-                <TimelineItem>
-                  <TimelineSeparator>
-                    <TimelineDot variant='filled' color='grey'/>
-                    {index !== experiences.length - 2  && <TimelineConnector style={{ background: '#607274' }} />}
-                  </TimelineSeparator>
-                  <TimelineContent sx = {{py:'12px', px:2}}>
-                    <EducationCard education={education} />
-                  </TimelineContent>
-                </TimelineItem>
+    <div className="EducationSection" id="education">
+      <div className="EducationContainer">
+        <div className="EducationWrapper">
+          <div className="EducationHeader">
+            <h2 className="EducationTitle">Education</h2>
+            <p className="EducationDescription">My academic journey and educational achievements</p>
+          </div>
+          <div className="TimelineSection">
+            <div className="Timeline">
+              {education.map((edu, index) => (
+                <div key={index} className="TimelineItem" style={{ animationDelay: `${index * 0.2}s` }}>
+                  <div className="TimelineMarker">
+                    <div className="TimelineDot"></div>
+                    {index !== education.length - 1 && <div className="TimelineConnector"></div>}
+                  </div>
+                  <div className="TimelineContent">
+                    <EducationCard education={edu} />
+                  </div>
+                </div>
               ))}
-            </Timeline>
+            </div>
           </div>
         </div>
       </div>

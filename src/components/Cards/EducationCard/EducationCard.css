@@ -1,77 +1,415 @@
-.ETop{
-    width: 100%;
-    display: flex;
-    gap: 12px
+.education-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-.EImage {
-    height: 50px;
-    background-color: #000;
-    border-radius: 10px;
-    margin-top: 4px;
-    @media only screen and (max-width: 768px){
-        height: 40px;
-    }
+.education-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(135deg, #000 0%, #333 100%);
+  transition: all 0.4s ease;
+  border-radius: 0 3px 3px 0;
 }
 
-.EBody {
-    width: 100%;
-    display: flex;
+.education-card::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.02) 0%, transparent 70%);
+  opacity: 0;
+  transition: all 0.4s ease;
+  pointer-events: none;
+}
+
+.education-card:hover {
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px) scale(1.02);
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+.education-card:hover::before {
+  width: 8px;
+  background: linear-gradient(135deg, #000 0%, #000 100%);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.education-card:hover::after {
+  opacity: 1;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.school-info {
+  flex: 1;
+}
+
+.school-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.school-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.education-card:hover .school-image {
+  transform: scale(1.05);
+  border-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.school-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.school-name {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #000;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 0;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #000 0%, #333 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.degree {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #666;
+  line-height: 1.3;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+
+.date-range {
+  font-size: 0.85rem;
+  color: #000;
+  font-weight: 700;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.08) 100%);
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.date-range::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  transition: left 0.6s ease;
+}
+
+.date-range:hover {
+  background: linear-gradient(135deg, #000 0%, #333 100%);
+  color: #fff;
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.date-range:hover::before {
+  left: 100%;
+}
+
+.academic-info {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.grade-badge,
+.wam-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 0.8rem 1.2rem;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.grade-badge::before,
+.wam-badge::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.05), transparent);
+  transition: left 0.5s ease;
+}
+
+.grade-badge:hover,
+.wam-badge:hover {
+  background: rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.grade-badge:hover::before,
+.wam-badge:hover::before {
+  left: 100%;
+}
+
+.grade-label,
+.wam-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.grade-value,
+.wam-value {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: #000;
+  letter-spacing: 0.3px;
+}
+
+.description {
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.description::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #000, transparent);
+}
+
+.description-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+.education-card:hover .description-text {
+  color: #333;
+  overflow: visible;
+  -webkit-line-clamp: unset;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+  .education-card {
+    padding: 1.5rem;
+    gap: 1.2rem;
+    max-width: 100%;
+    border-radius: 16px;
+  }
+
+  .card-header {
     flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .school-container {
+    gap: 0.8rem;
+  }
+
+  .school-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+  }
+
+  .school-name {
+    font-size: 1.2rem;
+  }
+
+  .degree {
+    font-size: 0.9rem;
+  }
+
+  .date-range {
+    font-size: 0.75rem;
+    padding: 0.5rem 1rem;
+    align-self: flex-start;
+  }
+
+  .academic-info {
+    gap: 0.8rem;
+  }
+
+  .grade-badge,
+  .wam-badge {
+    padding: 0.6rem 1rem;
+  }
+
+  .grade-label,
+  .wam-label,
+  .grade-value,
+  .wam-value {
+    font-size: 0.8rem;
+  }
+
+  .description-text {
+    font-size: 0.9rem;
+    -webkit-line-clamp: 3;
+  }
 }
 
-.EName {
-    font-size: 18px;
-    font-weight: 600;
-    color:rgb(0,0,0);
-    @media only screen and (max-width: 768px){
-        font-size: 14px;
-    }
+@media only screen and (max-width: 480px) {
+  .education-card {
+    padding: 1.2rem;
+    gap: 1rem;
+    border-radius: 12px;
+  }
+
+  .school-container {
+    gap: 0.6rem;
+  }
+
+  .school-image {
+    width: 45px;
+    height: 45px;
+  }
+
+  .school-name {
+    font-size: 1.1rem;
+  }
+
+  .degree {
+    font-size: 0.85rem;
+  }
+
+  .date-range {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .grade-badge,
+  .wam-badge {
+    padding: 0.5rem 0.8rem;
+  }
+
+  .grade-label,
+  .wam-label,
+  .grade-value,
+  .wam-value {
+    font-size: 0.75rem;
+  }
+
+  .description-text {
+    font-size: 0.85rem;
+  }
 }
 
-.EDegree {
-    font-size: 14px;
-    font-weight: 500;
-    color: rgb(0,0,0);
-    @media only screen and (max-width: 768px){
-        font-size: 12px;
-    }
+/* Enhanced animations */
+@keyframes cardSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
-.EDate {
-    font-size: 12px;
-    font-weight: 400;
-    color: rgb(0,0,0);
-    @media only screen and (max-width: 768px){
-        font-size: 10px;
-    }
+.education-card {
+  animation: cardSlideIn 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.EGrade {
-    font-size: 14px;
-    font-weight: 500;
-    color: rgb(0, 0, 0);
-    @media only screen and (max-width: 768px){
-        font-size: 12px;
-    }
+/* Hover effects for card content */
+.education-card:hover .school-name {
+  transform: translateX(3px);
 }
 
-.EWam {
-    font-size: 14px;
-    font-weight: 500;
-    color: rgb(0, 0, 0);
-    @media only screen and (max-width: 768px){
-        font-size: 12px;
-    }
+.education-card:hover .degree {
+  color: #333;
+  transform: translateX(2px);
 }
 
-.EDescription {
-    width: 100%;
-    font-size: 15px;
-    font-weight: 400;
-    color: rgb(0,0,0);
-    margin-bottom: 10px;
-    @media only screen and (max-width: 768px){
-        font-size: 12px;
-    }
+/* Focus states for accessibility */
+.education-card:focus {
+  outline: 2px solid #000;
+  outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+  .education-card {
+    background: #fff;
+    border: 1px solid #000;
+    box-shadow: none;
+    page-break-inside: avoid;
+    transform: none !important;
+  }
+
+  .grade-badge,
+  .wam-badge {
+    background: #fff;
+    border: 1px solid #000;
+  }
+
+  .school-image {
+    border: 1px solid #000;
+  }
 }

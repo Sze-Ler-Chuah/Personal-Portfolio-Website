@@ -1,67 +1,331 @@
-.EF {
-    background-color:  rgb(180, 192, 142);
+.EducationSection {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 5rem 0;
+  overflow: hidden;
 }
 
-.EContainer {
-    background-color: rgb(255, 247, 212);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
-    align-items: center;
-    padding: 0px 0px 60px 0px;  
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
-
+.EducationSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 40% 20%, rgba(0, 0, 0, 0.02) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(0, 0, 0, 0.02) 0%, transparent 50%);
+  pointer-events: none;
 }
 
-.EWrapper {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    max-width: 1350px;
-    padding: 40px 0px 0px 0px;
-    gap: 12px;
-    @media (max-width: 960px) {
-        flex-direction: column;
-    }
+.EducationContainer {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 2;
 }
 
-.ETitle {
-    font-family: cursive;
-    font-size: 60px;
-    text-align: center;
-    font-weight: 600;
-    color: rgb(27, 66, 66);
-    @media (max-width: 768px) {
-        font-size: 32px;
-    }
+.EducationWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
 }
 
-.EdDescription {
-    font-size: 18px;
-    text-align: left;
-    max-width: 600px;
-    color: rgb(0, 0, 0);
-    @media (max-width: 768px) {
-        font-size: 16px;
-    }
+.EducationHeader {
+  text-align: center;
+  max-width: 600px;
+  animation: fadeInUp 0.8s ease-out;
 }
 
-.ETimeLineSection {
-    width: 100%;
-    max-width: 1000px;
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    @media (max-width: 660px) {
-        align-items: end;
-    }
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
+.EducationTitle {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #000;
+  margin: 0 0 1rem 0;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+@media (max-width: 768px) {
+  .EducationTitle {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .EducationTitle {
+    font-size: 2rem;
+  }
+}
+
+.EducationDescription {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .EducationDescription {
+    font-size: 1rem;
+  }
+}
+
+.TimelineSection {
+  width: 100%;
+  max-width: 1000px;
+  position: relative;
+}
+
+.Timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.TimelineItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  position: relative;
+  animation: slideInLeft 0.6s ease-out both;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.TimelineMarker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.TimelineDot {
+  width: 16px;
+  height: 16px;
+  background: #000;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #000;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 3;
+}
+
+.TimelineItem:hover .TimelineDot {
+  transform: scale(1.2);
+  box-shadow: 0 0 0 3px #000, 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.TimelineConnector {
+  width: 2px;
+  height: 60px;
+  background: linear-gradient(to bottom, #000, #666);
+  margin-top: 8px;
+  position: relative;
+}
+
+.TimelineConnector::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1px;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05));
+  border-radius: 2px;
+}
+
+.TimelineContent {
+  flex: 1;
+  animation: fadeInRight 0.6s ease-out both;
+  animation-delay: inherit;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .EducationSection {
+    padding: 3rem 0;
+  }
+
+  .EducationContainer {
+    padding: 0 1rem;
+  }
+
+  .EducationWrapper {
+    gap: 2rem;
+  }
+
+  .TimelineItem {
+    gap: 1rem;
+  }
+
+  .TimelineDot {
+    width: 12px;
+    height: 12px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 2px #000;
+  }
+
+  .TimelineConnector {
+    height: 40px;
+    margin-top: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .TimelineItem {
+    gap: 0.8rem;
+  }
+
+  .TimelineDot {
+    width: 10px;
+    height: 10px;
+  }
+
+  .TimelineConnector {
+    height: 30px;
+    margin-top: 5px;
+  }
+}
+
+/* Enhanced hover effects */
+.TimelineItem:hover .TimelineContent {
+  transform: translateX(5px);
+}
+
+.Timeline::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: linear-gradient(to bottom, transparent, #000 20%, #000 80%, transparent);
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .Timeline::before {
+    left: 6px;
+    top: 6px;
+    bottom: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Timeline::before {
+    left: 5px;
+    top: 5px;
+    bottom: 5px;
+  }
+}
+
+/* Smooth transitions for all elements */
+* {
+  transition: all 0.3s ease;
+}
+
+/* Focus states for accessibility */
+.TimelineItem:focus-within .TimelineDot {
+  transform: scale(1.2);
+  box-shadow: 0 0 0 3px #000, 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Print styles */
+@media print {
+  .EducationSection {
+    background: #fff;
+    padding: 2rem 0;
+  }
+
+  .Timeline::before,
+  .TimelineConnector {
+    background: #000;
+  }
+
+  .TimelineDot {
+    background: #000;
+    border-color: #fff;
+    box-shadow: none;
+  }
+}
+
+/* Loading animation for timeline items */
+@keyframes timelineItemLoad {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.TimelineItem {
+  animation: timelineItemLoad 0.6s ease-out both;
+}
+
+/* Enhanced visual effects */
+.TimelineSection:hover .TimelineItem:not(:hover) {
+  opacity: 0.7;
+}
+
+/* Gradient overlay for depth */
+.Timeline::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.01) 0%,
+    transparent 30%,
+    transparent 70%,
+    rgba(0, 0, 0, 0.01) 100%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
