@@ -185,7 +185,7 @@ export const Bio = {
       description:
         "Developed my very first website. This is a portfolio website. ",
       image:
-        " https://github.com/SzeLer/portfolio/raw/master/src/Image/Portfolio_Screenshot.png",
+        "https://github.com/Sze-Ler-Chuah/Personal-Portfolio-Website/blob/master/src/Image/Portfolio_Screenshot.png",
       tags: ["HTML", "CSS", "JavaScript", "React"],
       category: "web app",
       github: "https://github.com/Sze-Ler-Chuah/Personal-Portfolio-Website",
@@ -197,7 +197,7 @@ export const Bio = {
       date: "Jan 2024",
       description:
         "Weather WebApp which helps in forecasting weather for countries around the world",
-      image: "https://github.com/SzeLer/portfolio/raw/master/src/Image/Picture2.png",
+      image: "https://github.com/Sze-Ler-Chuah/Personal-Portfolio-Website/blob/master/src/Image/Picture2.png",
       tags: ["HTML", "CSS", "JavaScript"],
       category: "web app",
       github: "https://github.com/SzeLer/What-s-The-Weather",
@@ -209,7 +209,7 @@ export const Bio = {
       date: "Mar 2024 - May 2024",
       description:
         "Created a static factory design pattern in Java to create a rogue like game. The game features a player character which can carry items, sell items to earn money, buying special items, picking up items and using them to defeat enemies.",
-      image: "https://github.com/SzeLer/portfolio/raw/master/src/Image/Static_Factory.png",
+      image: "https://github.com/Sze-Ler-Chuah/Personal-Portfolio-Website/blob/master/src/Image/Static_Factory.png",
       tags: ["Java"],
       category: "oop",
       github: "https://github.com/Sze-Ler-Chuah/Static-Factory"
@@ -233,7 +233,7 @@ export const Bio = {
         "Developed a nutrition tracking app using Android Studio, Jetpack Compose, Retrofit and Room DB. The app allows users to check their diet score, improve their diets, have insights on all user's diet",
       image: "pending",
       tags: ["Android Studio", "Jetpack Compose", "Retrofit", "Room DB"],
-      category: "database",
+      category: "mobile",
       github: "https://github.com/Sze-Ler-Chuah/Static-Factory"
     },
     {
@@ -242,9 +242,9 @@ export const Bio = {
       date: "Jul 2023 - Sep 2023",
       description:
         "Developed a Tetris game using Java.",
-      image: "https://github.com/SzeLer/portfolio/raw/master/src/Image/Tetris_Game.png",
+      image: "https://github.com/Sze-Ler-Chuah/Personal-Portfolio-Website/blob/master/src/Image/Tetris_Game.png",
       tags: ["Typescript", "HTML", "CSS"],
-      category: "database",
+      category: "web app",
       github: "https://github.com/Sze-Ler-Chuah/Tetris-Game"
     },
     {
@@ -255,7 +255,7 @@ export const Bio = {
         "Conducted data preprocessing, engineering, visualisation, building machine learning models and evaluating it using Python. Gained hands-on experience with prediction data pipelines, focussing on classifying credit scores. Applied supervised learning techniques, utilizing data normalisation and Support Vector Machine (SVM) algorithms for model building.",
       image: "pending",
       tags: ["Python", "Pandas"],
-      category: "database",
+      category: "data",
       github: "https://github.com/Sze-Ler-Chuah/Static-Factory"
     },                  
   ];
