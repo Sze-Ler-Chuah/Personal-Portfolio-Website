@@ -1,71 +1,93 @@
-import React from 'react';
-import { CloseRounded } from '@mui/icons-material';
-import { Modal } from '@mui/material';
-import "./ProjectDetails.css";
-import styled from 'styled-components';
+"use client"
+import { X, Github, ExternalLink, Calendar, Tag } from "lucide-react"
+import "./ProjectDetails.css"
 
-const PDButton = styled.a`
-    width: 100%;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 600;
-    color:rgb(255,255,255);
-    padding: 12px 16px;
-    border-radius: 8px;
-    border : 2px solid rgb(0,0,0);
-    background-color: rgb(15, 33, 103);
-    cursor: pointer;
-    text-decoration: none;
-    transition: all 0.5s ease;
-    &:hover {
-        background-color: rgb(0, 0, 0);
+const ProjectDetails = ({ openModal, setOpenModal }) => {
+  const project = openModal?.project
+
+  if (!openModal?.state || !project) return null
+
+  const handleBackdropClick = (e) => {
+    if (e.target === e.currentTarget) {
+      setOpenModal({ state: false, project: null })
     }
-    @media only screen and (max-width: 600px) {
-        font-size: 12px;
-    }
-`;
+  }
 
-const SButton = styled(CloseRounded)`
-    color : rgb(0,0,0);
-    &:hover{
-        background: rgb(0, 77, 132);
-        color : rgb(255,255,255);
-    }`
+  const handleClose = () => {
+    setOpenModal({ state: false, project: null })
+  }
 
-const ProjectDetails = ({openModal,setOpenModal}) => {
-    const project = openModal?.project;
-    return (
-        <Modal open = {true} onClose={() => setOpenModal({state : false, project : null})}>
-            <div className='PDContainer'>
-                <div className='PDWrapper'>
-                    <SButton
-                        style={{
-                            position: "absolute",
-                            top: "5px",
-                            right: "20px",
-                            cursor: "pointer",
-                            width: '30px',
-                            height : '30px',
-                            borderRadius: 25
-                        }}
-                        onClick={() => setOpenModal({ state: false, project: null })}/>
-                    <img src = {project?.image} alt = 'project_image'/>
-                    <div className='PDTitle'>{project.title}</div>
-                    <div className='PDDate'>{project.date}</div>
-                    <div className='PDTags'>
-                        {project.tags.map((tag) => (
-                            <div className='PDTag'> {tag} </div>
-                        ))}
-                    </div>
-                    <div className='PDDescription'>{project?.description}</div>
-                    <div className='PDButtonGroup'>
-                        <PDButton dull href={project?.github} target='new'>View Code</PDButton>
-                        <PDButton href={project?.webapp} target='new'>View Live App</PDButton>
-                    </div>
-                </div>
+  return (
+    <div className="modal-backdrop" onClick={handleBackdropClick}>
+      <div className="modal-container">
+        <div className="modal-wrapper">
+          <button className="close-button" onClick={handleClose} aria-label="Close modal">
+            <X size={24} />
+          </button>
+
+          <div className="modal-content">
+            <div className="project-image-container">
+              <img
+                src={project?.image || "/placeholder.svg?height=300&width=500"}
+                alt={project?.title || "Project"}
+                className="project-image"
+              />
+              <div className="image-overlay"></div>
             </div>
-        </Modal>
-    )
+
+            <div className="project-info">
+              <div className="project-header">
+                <h2 className="project-title">{project.title}</h2>
+                <div className="project-date">
+                  <Calendar size={16} />
+                  <span>{project.date}</span>
+                </div>
+              </div>
+
+              <div className="project-tags">
+                <div className="tags-header">
+                  <Tag size={16} />
+                  <span>Technologies</span>
+                </div>
+                <div className="tags-list">
+                  {project.tags?.map((tag, index) => (
+                    <span key={index} className="project-tag">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <div className="project-description">
+                <h3 className="description-title">About This Project</h3>
+                <p className="description-text">{project?.description}</p>
+              </div>
+
+              <div className="project-actions">
+                {project?.github && (
+                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="action-button primary">
+                    <Github size={20} />
+                    <span>View Code</span>
+                  </a>
+                )}
+                {project?.webapp && (
+                  <a
+                    href={project.webapp}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="action-button secondary"
+                  >
+                    <ExternalLink size={20} />
+                    <span>Live Demo</span>
+                  </a>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
 }
 
 export default ProjectDetails

@@ -185,7 +185,7 @@ export const Bio = {
       description:
         "Developed my very first website. This is a portfolio website. ",
       image:
-        " https://github.com/SzeLer/portfolio/raw/master/src/Image/Picture1.png",
+        " https://github.com/SzeLer/portfolio/raw/master/src/Image/Portfolio_Screenshot.png",
       tags: ["HTML", "CSS", "JavaScript", "React"],
       category: "web app",
       github: "https://github.com/Sze-Ler-Chuah/Personal-Portfolio-Website",
@@ -208,10 +208,54 @@ export const Bio = {
       title: "Static Factory (Rogue Like Game)",
       date: "Mar 2024 - May 2024",
       description:
-        "Weather WebApp which helps in forecasting weather for countries around the world",
-      image: "pending",
+        "Created a static factory design pattern in Java to create a rogue like game. The game features a player character which can carry items, sell items to earn money, buying special items, picking up items and using them to defeat enemies.",
+      image: "https://github.com/SzeLer/portfolio/raw/master/src/Image/Static_Factory.png",
       tags: ["Java"],
       category: "oop",
       github: "https://github.com/Sze-Ler-Chuah/Static-Factory"
-    },    
+    }, 
+    {
+      id: 3,
+      title: "Veterinary Clinic Database Management System",
+      date: "Mar 2024 - May 2024",
+      description:
+        "Created a database management system for a veterinary clinic using SQL. The system allows the clinic to manage patient records, appointments and treatments efficiently.",
+      image: "pending",
+      tags: ["SQL"],
+      category: "database",
+      github: "https://github.com/Sze-Ler-Chuah/Veteriniary-Clinic-Database"
+    },
+    {
+      id: 4,
+      title: "NutriTrack (Nutrition Tracking App)",
+      date: "Mar 2025 - May 2025",
+      description:
+        "Developed a nutrition tracking app using Android Studio, Jetpack Compose, Retrofit and Room DB. The app allows users to check their diet score, improve their diets, have insights on all user's diet",
+      image: "pending",
+      tags: ["Android Studio", "Jetpack Compose", "Retrofit", "Room DB"],
+      category: "database",
+      github: "https://github.com/Sze-Ler-Chuah/Static-Factory"
+    },
+    {
+      id: 5,
+      title: "Tetris Game",
+      date: "Jul 2023 - Sep 2023",
+      description:
+        "Developed a Tetris game using Java.",
+      image: "https://github.com/SzeLer/portfolio/raw/master/src/Image/Tetris_Game.png",
+      tags: ["Typescript", "HTML", "CSS"],
+      category: "database",
+      github: "https://github.com/Sze-Ler-Chuah/Tetris-Game"
+    },
+    {
+      id: 6,
+      title: "Prediction on Credit Score",
+      date: "Apr 2023 - May 2023",
+      description:
+        "Conducted data preprocessing, engineering, visualisation, building machine learning models and evaluating it using Python. Gained hands-on experience with prediction data pipelines, focussing on classifying credit scores. Applied supervised learning techniques, utilizing data normalisation and Support Vector Machine (SVM) algorithms for model building.",
+      image: "pending",
+      tags: ["Python", "Pandas"],
+      category: "database",
+      github: "https://github.com/Sze-Ler-Chuah/Static-Factory"
+    },                  
   ];
