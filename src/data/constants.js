@@ -188,8 +188,8 @@ export const Bio = {
         " https://github.com/SzeLer/portfolio/raw/master/src/Image/Picture1.png",
       tags: ["HTML", "CSS", "JavaScript", "React"],
       category: "web app",
-      github: "https://github.com/SzeLer/portfolio",
-      webapp: "https://sze-ler-portfolio-9y9br5864-sze-lers-projects.vercel.app/"
+      github: "https://github.com/Sze-Ler-Chuah/Personal-Portfolio-Website",
+      webapp: "https://personal-portfolio-website-seven-rosy.vercel.app/"
     },
     {
       id: 1,
@@ -203,4 +203,15 @@ export const Bio = {
       github: "https://github.com/SzeLer/What-s-The-Weather",
       webapp : "https://szeler.github.io/SzeLer.github.io-What-s-The-Weather/"
     },
+    {
+      id: 2,
+      title: "Static Factory (Rogue Like Game)",
+      date: "Mar 2024 - May 2024",
+      description:
+        "Weather WebApp which helps in forecasting weather for countries around the world",
+      image: "pending",
+      tags: ["Java"],
+      category: "oop",
+      github: "https://github.com/Sze-Ler-Chuah/Static-Factory"
+    },    
   ];
