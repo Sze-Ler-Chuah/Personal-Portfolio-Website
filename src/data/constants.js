@@ -374,20 +374,20 @@ export const Bio = {
         id: 15,
         title: "The Changing Tide: Malaysia's 15th General Election",
         date: "Sep 2024 - Oct 2024",
-        image: "https://github.com/Sze-Ler-Chuah/Personal-Portfolio-Website/blob/master/src/Image/Data_Visualisation.png?raw=true",
+        image: "https://github.com/Sze-Ler-Chuah/Personal-Portfolio-Website/blob/master/src/Image/Data_Visualisation_1.png?raw=true",
         description: "Analysis of Malaysia's 15th General Election using HTML, CSS, Vega and Vega-Lite. The project visualizes election data to uncover trends and insights, providing an interactive platform for users to explore the electoral landscape.",
         tags: ["HTML", "CSS", "Vega", "Vega-Lite"],
         category: "web app",
         github: "https://github.com/Sze-Ler-Chuah/FIT3155-A3"
     },
     {
-        id: 15,
-        title: "The Changing Tide: Malaysia's 15th General Election",
-        date: "Sep 2024 - Oct 2024",
-        image: "https://github.com/Sze-Ler-Chuah/Personal-Portfolio-Website/blob/master/src/Image/Data_Visualisation.png?raw=true",
-        description: "Analysis of Malaysia's 15th General Election using HTML, CSS, Vega and Vega-Lite. The project visualizes election data to uncover trends and insights, providing an interactive platform for users to explore the electoral landscape.",
-        tags: ["HTML", "CSS", "Vega", "Vega-Lite"],
-        category: "web app",
+        id: 16,
+        title: "Biggest Threat To Temperature: Study On The Pollutant With The Highest Emission Value From 2010 To 2020",
+        date: "Aug 2024 - Sep 2024",
+        image: "https://github.com/Sze-Ler-Chuah/Personal-Portfolio-Website/blob/master/src/Image/Data_Visualisation_2.png?raw=true",
+        description: "Designed an interactive Tableau dashboard to analyze the relationship between air pollutants and temperature trends in Malaysia from 2010 to 2020. The visualizations include dual-axis charts, stacked area and bar charts, line charts, dumbbell charts, and donut charts. The dashboard enables interactive exploration through year filtering, tooltip drilldowns, and source-based highlighting, helping identify the pollutant with the highest emission impact on temperature rise.",
+        tags: ["Tableau"],
+        category: "data",
         github: "https://public.tableau.com/app/profile/sze.ler.chuah/viz/DataVisualisation1_17249838013490/FinalDashboard#1"
     },
                               
