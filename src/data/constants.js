@@ -185,7 +185,7 @@ export const Bio = {
       description:
         "Developed my very first website. This is a portfolio website. ",
       image:
-        "https://github.com/Sze-Ler-Chuah/Personal-Portfolio-Website/blob/master/src/Image/Portfolio_Screenshot.png",
+        "https://github.com/Sze-Ler-Chuah/Personal-Portfolio-Website/blob/master/src/Image/Portfolio_Screenshot.png?raw=true",
       tags: ["HTML", "CSS", "JavaScript", "React"],
       category: "web app",
       github: "https://github.com/Sze-Ler-Chuah/Personal-Portfolio-Website",
@@ -197,7 +197,7 @@ export const Bio = {
       date: "Jan 2024",
       description:
         "Weather WebApp which helps in forecasting weather for countries around the world",
-      image: "https://github.com/Sze-Ler-Chuah/Personal-Portfolio-Website/blob/master/src/Image/Picture2.png",
+      image: "https://github.com/Sze-Ler-Chuah/Personal-Portfolio-Website/blob/master/src/Image/Picture2.png?raw=true",
       tags: ["HTML", "CSS", "JavaScript"],
       category: "web app",
       github: "https://github.com/SzeLer/What-s-The-Weather",
@@ -209,7 +209,7 @@ export const Bio = {
       date: "Mar 2024 - May 2024",
       description:
         "Created a static factory design pattern in Java to create a rogue like game. The game features a player character which can carry items, sell items to earn money, buying special items, picking up items and using them to defeat enemies.",
-      image: "https://github.com/Sze-Ler-Chuah/Personal-Portfolio-Website/blob/master/src/Image/Static_Factory.png",
+      image: "https://github.com/Sze-Ler-Chuah/Personal-Portfolio-Website/blob/master/src/Image/Static_Factory.png?raw=true",
       tags: ["Java"],
       category: "oop",
       github: "https://github.com/Sze-Ler-Chuah/Static-Factory"
@@ -220,7 +220,7 @@ export const Bio = {
       date: "Mar 2024 - May 2024",
       description:
         "Created a database management system for a veterinary clinic using SQL. The system allows the clinic to manage patient records, appointments and treatments efficiently.",
-      image: "pending",
+      image: "",
       tags: ["SQL"],
       category: "database",
       github: "https://github.com/Sze-Ler-Chuah/Veteriniary-Clinic-Database"
@@ -231,7 +231,7 @@ export const Bio = {
       date: "Mar 2025 - May 2025",
       description:
         "Developed a nutrition tracking app using Android Studio, Jetpack Compose, Retrofit and Room DB. The app allows users to check their diet score, improve their diets, have insights on all user's diet",
-      image: "pending",
+      image: "",
       tags: ["Android Studio", "Jetpack Compose", "Retrofit", "Room DB"],
       category: "mobile",
       github: "https://github.com/Sze-Ler-Chuah/Static-Factory"
@@ -242,7 +242,7 @@ export const Bio = {
       date: "Jul 2023 - Sep 2023",
       description:
         "Developed a Tetris game using Java.",
-      image: "https://github.com/Sze-Ler-Chuah/Personal-Portfolio-Website/blob/master/src/Image/Tetris_Game.png",
+      image: "https://github.com/Sze-Ler-Chuah/Personal-Portfolio-Website/blob/master/src/Image/Tetris_Game.png?raw=true",
       tags: ["Typescript", "HTML", "CSS"],
       category: "web app",
       github: "https://github.com/Sze-Ler-Chuah/Tetris-Game"
@@ -253,9 +253,51 @@ export const Bio = {
       date: "Apr 2023 - May 2023",
       description:
         "Conducted data preprocessing, engineering, visualisation, building machine learning models and evaluating it using Python. Gained hands-on experience with prediction data pipelines, focussing on classifying credit scores. Applied supervised learning techniques, utilizing data normalisation and Support Vector Machine (SVM) algorithms for model building.",
-      image: "pending",
+      image: "",
       tags: ["Python", "Pandas"],
       category: "data",
-      github: "https://github.com/Sze-Ler-Chuah/Static-Factory"
-    },                  
+      github: ""
+    },
+    {
+      id: 7,
+      title: "TwentyOne Text Based Game",
+      date: "Jul 2022 - Aug 2022",
+      description:
+        "Created a TwentyOne Text Based game using Python. The game is a simple card game where the player has to try to reach 21 points as closely as possible without exceeding it. There are 2 modes in the game, single player and multiplayer. In single player mode, the player plays against the computer. In multiplayer mode, the player can play with another player. To create this game, basic Python concepts such as loop, function, dictionary and conditional statement are used.",
+      image: "https://github.com/Sze-Ler-Chuah/Personal-Portfolio-Website/blob/master/src/Image/Twenty_One.png?raw=true",
+      tags: ["Python"],
+      category: "algorithm",
+      github: "https://github.com/Sze-Ler-Chuah/Twenty-One-Text-Based-Game"
+    },
+    {
+      id: 8,
+      title: "Hearts Text Based Game",
+      date: "Aug 2022 - Sep 2022",
+      description:
+        "Developed a text-based version of the classic card game Hearts using Python, following the rules of the Black Lady variant. The game supports both single-player (against AI) and local multiplayer modes (2 to 4 players). Players aim to avoid penalty cards — Hearts and the Queen of Spades — and keep their score as low as possible, with the game ending once a player reaches 100 points. The implementation includes full game logic: card dealing, trick-taking mechanics, scoring (including 'Shooting the Moon'), and round progression. Built using core Python concepts such as loops, functions, dictionaries, and conditionals.",
+      image: "https://github.com/Sze-Ler-Chuah/Personal-Portfolio-Website/blob/master/src/Image/Hearts.png?raw=true",
+      tags: ["Python"],
+      category: "algorithm",
+      github: "https://github.com/Sze-Ler-Chuah/Hearts-Text-Based-Game"
+    },
+    {
+      id: 9,
+      title: "Global Route Planner for Papa Pierre's Pâtisseries",
+      date: "Sep 2022 - Oct 2022",
+      description: "Built a Python-based pathfinding system for Papa Pierre's Pâtisseries, a fictional global delivery business. The system supports three unique vehicle types with specialized travel constraints: the CrappyCrepeCar (global but slow), the DiplomacyDonutDinghy (fast via capital cities and intra-country travel), and the TeleportingTarteTrolley (teleports over short distances). The program calculates the most efficient route between cities based on vehicle rules, optimizing for delivery time. Graph algorithms were implemented to manage route computation, country/capital rules, and distance constraints across nearly a thousand global locations.",
+      image: "https://github.com/Sze-Ler-Chuah/Personal-Portfolio-Website/blob/master/src/Image/Papa_Pierre.png?raw=true",
+      tags: ["Python", "Graph Algorithms", "Pathfinding"],
+      category: "algorithm",
+      github: "https://github.com/Sze-Ler-Chuah/PapaPierre-RoutePlanner"
+    },
+    {
+        id: 9,
+        title: "Paint Program",
+        date: "Mar 2023 - Apr 2023",
+        description: "Developed a command-line Paint Program in Python using custom-built data structures such as stacks, queues, sets, and sorted lists. The application allows users to draw shapes, fill regions, and perform undo/redo operations within a virtual canvas. All core data structures—including stacks, referential arrays, and sorted lists—were implemented from scratch to handle shape history, pixel tracking, and command execution efficiently. This project highlights deep understanding of abstract data types and algorithmic design in a practical graphical context.",
+        image: "https://github.com/Sze-Ler-Chuah/Personal-Portfolio-Website/blob/master/src/Image/Paint.png?raw=true",
+        tags: ["Python"],
+        category: "algorithm",
+        github: "https://github.com/Sze-Ler-Chuah/FIT1008_A1"
+    },                               
   ];

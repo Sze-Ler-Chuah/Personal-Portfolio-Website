@@ -360,3 +360,26 @@
     border: 1px solid #000;
   }
 }
+
+.project-card.no-image .card-image {
+  display: none;
+}
+
+.project-card.no-image .image-overlay {
+  display: none;
+}
+
+.no-image-placeholder {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  color: #999;
+  border: 1px dashed #ccc;
+  font-size: 14px;
+  gap: 8px;
+}
+
