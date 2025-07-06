@@ -380,5 +380,15 @@ export const Bio = {
         category: "web app",
         github: "https://github.com/Sze-Ler-Chuah/FIT3155-A3"
     },
+    {
+        id: 15,
+        title: "The Changing Tide: Malaysia's 15th General Election",
+        date: "Sep 2024 - Oct 2024",
+        image: "https://github.com/Sze-Ler-Chuah/Personal-Portfolio-Website/blob/master/src/Image/Data_Visualisation.png?raw=true",
+        description: "Analysis of Malaysia's 15th General Election using HTML, CSS, Vega and Vega-Lite. The project visualizes election data to uncover trends and insights, providing an interactive platform for users to explore the electoral landscape.",
+        tags: ["HTML", "CSS", "Vega", "Vega-Lite"],
+        category: "web app",
+        github: "https://public.tableau.com/app/profile/sze.ler.chuah/viz/DataVisualisation1_17249838013490/FinalDashboard#1"
+    },
                               
   ];
