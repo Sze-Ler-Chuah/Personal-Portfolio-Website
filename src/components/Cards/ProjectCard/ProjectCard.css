@@ -170,10 +170,15 @@
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
   transition: all 0.3s ease;
+  max-height: 4.8rem; /* 3 lines * 1.6 line-height */
 }
 
 .project-card:hover .card-description {
   color: #333;
+  overflow: visible;
+  display: block;
+  -webkit-line-clamp: unset;
+  max-height: none;
 }
 
 .card-tags {
@@ -382,4 +387,3 @@
   font-size: 14px;
   gap: 8px;
 }
-

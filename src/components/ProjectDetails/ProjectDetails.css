@@ -54,7 +54,9 @@
   overflow: hidden;
   position: relative;
   max-height: 90vh;
-  overflow-y: auto;
+  overflow-y: auto; /* Allows scrolling if content is too long */
+  display: flex;
+  flex-direction: column;
 }
 
 .modal-wrapper::-webkit-scrollbar {
@@ -136,6 +138,11 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  flex: 1;
+  min-height: 0;
+  /* Ensure no height restrictions */
+  overflow: visible !important;
+  max-height: none !important;
 }
 
 .project-header {
@@ -257,6 +264,10 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  /* Ensure the container doesn't restrict text */
+  overflow: visible !important;
+  max-height: none !important;
+  height: auto !important;
 }
 
 .description-title {
@@ -287,6 +298,22 @@
   color: #555;
   margin: 0;
   font-weight: 400;
+  /* Force no truncation with important declarations */
+  white-space: normal !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  max-width: 100% !important;
+  /* Remove any webkit truncation */
+  overflow: visible !important;
+  text-overflow: unset !important;
+  -webkit-line-clamp: unset !important;
+  -webkit-box-orient: unset !important;
+  display: block !important;
+  /* Ensure proper text flow */
+  word-break: break-word;
+  hyphens: auto;
+  max-height: none !important;
+  height: auto !important;
 }
 
 .project-actions {

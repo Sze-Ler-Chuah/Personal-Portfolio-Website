@@ -291,7 +291,7 @@ export const Bio = {
       github: "https://github.com/Sze-Ler-Chuah/PapaPierre-RoutePlanner"
     },
     {
-        id: 9,
+        id: 10,
         title: "Paint Program",
         date: "Mar 2023 - Apr 2023",
         description: "Developed a command-line Paint Program in Python using custom-built data structures such as stacks, queues, sets, and sorted lists. The application allows users to draw shapes, fill regions, and perform undo/redo operations within a virtual canvas. All core data structures—including stacks, referential arrays, and sorted lists—were implemented from scratch to handle shape history, pixel tracking, and command execution efficiently. This project highlights deep understanding of abstract data types and algorithmic design in a practical graphical context.",
@@ -299,5 +299,86 @@ export const Bio = {
         tags: ["Python"],
         category: "algorithm",
         github: "https://github.com/Sze-Ler-Chuah/FIT1008_A1"
-    },                               
+    },
+    {
+        id: 11,
+        title: "Mountain Climber",
+        date: "Apr 2023 - May 2023",
+        description: "Developed an interactive mountain trail editor using Python and the Arcade library. Users can visually add, edit, and organize mountains and trails, with support for difficulty levels, branching paths, and real-time graph visualization. The system includes features for saving/loading trail data and grouping trails algorithmically by difficulty.",
+        image: "",
+        tags: ["Python"],
+        category: "algorithm",
+        github: "https://github.com/Sze-Ler-Chuah/FIT1008-A2"
+    },
+    {
+        id: 12,
+        title: "Beekeper Game",
+        date: "May 2023 - Jun 2023",
+        description: "Created a beekeper game using Binary Trees, Binary Search Trees and Heaps",
+        image: "",
+        tags: ["Python"],
+        category: "algorithm",
+        github: "https://github.com/Sze-Ler-Chuah/FIT1008-A3"
+    },
+    {
+        id: 12,
+        title: "Restaurant Maximum Revenue & Fastest Path To Reach The Top Of The Tower",
+        date: "Aug 2023 - Sep 2023",
+        description: "Uses Dynamic Programming's Knapsack Problem concept together with inclusion exclusion principle to find maximum revenue and the sites selected to open the restaurants which contributes to maximum revenue and each sites must be at least d distance apart from each other. Also, uses Dijkstra's algorithm to find the fastest path to reach the top of the tower.",
+        image: "",
+        tags: ["Python"],
+        category: "algorithm",
+        github: "https://github.com/Sze-Ler-Chuah/FIT2004-A1"
+    },
+    {
+        id: 13,
+        title: "Customised Auto-Complete & A Weekend Getaway",
+        date: "Sep 2023 - Oct 2023",
+        description: "Implements a custom auto-complete system using a Trie data structure, enabling fast and efficient word searches. Also models a weekend trip allocation problem using Network Flow to assign participants to preferred destinations with car and driver constraints.",
+        image: "",
+        tags: ["Python"],
+        category: "algorithm",
+        github: "https://github.com/Sze-Ler-Chuah/FIT2004-A2"
+    },
+    {
+        id: 13,
+        title: "Reversed Direction Boyer Moore Algorithm & Bitwise Operations Exact Pattern Matching",
+        date: "Mar 2024 - Apr 2024",
+        description: "Implemented the Reversed Direction Boyer Moore Algorithm for efficient substring searching, enhancing search speed by preprocessing the pattern. Also developed a Bitwise Operations Exact Pattern Matching algorithm, leveraging bitwise operations to achieve fast and memory-efficient pattern matching in strings.",
+        image: "",
+        tags: ["Python"],
+        category: "algorithm",
+        github: "https://github.com/Sze-Ler-Chuah/FIT3155-A1"
+    },
+    {
+        id: 14,
+        title: "Ukkonen Algorithm & Bitwise Operations Exact Pattern Matching",
+        date: "Apr 2024 - May 2024",
+        description: "Implemented Ukkonen's algorithm for efficient suffix tree construction, enabling fast substring searches and pattern matching. Also developed a Burrows-Wheeler Transform (BWT)-based text compression system that uses Huffman coding for characters and Elias omega coding for run-lengths, along with a decoder to fully reconstruct the original text from the compressed format.",
+        image: "",
+        tags: ["Python"],
+        category: "algorithm",
+        github: "https://github.com/Sze-Ler-Chuah/FIT3155-A2"
+    },
+    {
+        id: 14,
+        title: "Compute Possible Strings Of A Given Length Of A Number Of Alphabet & B-Tree",
+        date: "May 2024 - Jun 2024",
+        description: "Implemented a combinatorial analysis tool to count distinct cyclic rotations of all strings of given length over a defined alphabet, detecting patterns in string periodicity. Also developed a B-tree construction and manipulation system supporting ASCII-based sorted insertions and deletions, built from an input dictionary and dynamically updated using a command script. Final tree contents are output in sorted order.",
+        image: "",
+        tags: ["Python"],
+        category: "algorithm",
+        github: "https://github.com/Sze-Ler-Chuah/FIT3155-A3"
+    },
+    {
+        id: 15,
+        title: "The Changing Tide: Malaysia's 15th General Election",
+        date: "Sep 2024 - Oct 2024",
+        image: "https://github.com/Sze-Ler-Chuah/Personal-Portfolio-Website/blob/master/src/Image/Data_Visualisation.png?raw=true",
+        description: "Analysis of Malaysia's 15th General Election using HTML, CSS, Vega and Vega-Lite. The project visualizes election data to uncover trends and insights, providing an interactive platform for users to explore the electoral landscape.",
+        tags: ["HTML", "CSS", "Vega", "Vega-Lite"],
+        category: "web app",
+        github: "https://github.com/Sze-Ler-Chuah/FIT3155-A3"
+    },
+                              
   ];

@@ -60,7 +60,9 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
 
               <div className="project-description">
                 <h3 className="description-title">About This Project</h3>
-                <p className="description-text">{project?.description}</p>
+                <div className="description-text-container">
+                  <p className="description-text">{project?.description || "No description available."}</p>
+                </div>
               </div>
 
               <div className="project-actions">
