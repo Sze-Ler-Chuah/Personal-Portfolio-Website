@@ -16,6 +16,7 @@ const Project = ({ openModal, setOpenModal }) => {
     { key: "mobile", label: "Mobile App" },
     { key: "algorithm", label: "Algorithm" },
     { key: "oop", label: "Object Oriented Programming" },
+    { key: "testing", label: "Software Testing" },
 
   ]
 
