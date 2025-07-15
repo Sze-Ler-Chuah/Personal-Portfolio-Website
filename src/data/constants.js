@@ -149,7 +149,7 @@ export const Bio = {
       date: "July 2022 - July 2025",
       grade: "3.98 CGPA",
       wam : "87.656",
-      desc: "I am a recent Computer Science graduand from Monash University, having completed my studies with a CGPA of 3.98 and a WAM of 87.656. My academic focus included algorithm & data structures, data science, object oriented programming, mobile app development, big data and parallel computing.",
+      desc: "I am a recent Computer Science graduand from Monash University, having completed my studies with a CGPA of 3.973 and a WAM of 86.949. My academic focus included algorithm & data structures, data science, object oriented programming, mobile app development, big data and parallel computing.",
       degree: "Bachelor Degree of Computer Science",
     },
     {
@@ -169,7 +169,7 @@ export const Bio = {
       role: "Business Analyst Intern",
       company: "Juris Technologies",
       date:  "Nov 2024 - Feb 2025",
-      desc: "Employed as a business analyst Intern for Juris Technologies. My daily job scope is perfoming end-to-end system testing, data validation, implement system modifications and document test cases, ensuring all of the features of the credit management system align with the user requirement.",
+      desc: "Worked as a Business Analyst Intern at Juris Technologies, contributing to the development and enhancement of a credit management system. Responsibilities included implementing features based on functional specification documents, conducting end-to-end system testing and data validation, executing system modifications, and documenting comprehensive test cases. Ensured all features met user requirements and business objectives.",
       skills: ["SQL","Communication","Presentation"],
     },
     {
@@ -393,5 +393,15 @@ export const Bio = {
         category: "algorithm",
         github: "https://github.com/Sze-Ler-Chuah/FIT3155-A3"
     },
+        {
+        title: "Library Web App",
+        date: "Jul 2025 - Jun 2025",
+        description: "Learnt to create a full stack web application using React, Spring Boot and SQL. The web app allows users to search for books, borrow books, return books. The web app is built using React for the frontend, Spring Boot for the backend and SQL for the database. Learn through Udemy course.",
+        image: "https://github.com/Sze-Ler-Chuah/Personal-Portfolio-Website/blob/master/src/Image/Library_Web_App.png?raw=true",
+        tags: ["HTML", "CSS", "Typescript", "React", "Spring Boot", "SQL"],
+        category: "web app",
+        github: "https://github.com/Sze-Ler-Chuah/FIT3155-A3"
+    },
+
                               
   ];
